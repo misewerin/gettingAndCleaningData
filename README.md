@@ -10,4 +10,4 @@
 ## Prerequisites
 The data for this project needs to be downloaded from [here] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 Unzip the data into the main folder of the project and set the working directory to that folder.
-Once this is done you can run the script run_analysis.R whcih creates a file with the data for task 5.
+Once this is done you can run the script run_analysis.R which creates a file with the data for task 5.
