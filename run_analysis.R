@@ -43,7 +43,7 @@ extract <- data[, columnExtract]
 #merge activity names to extract
 extract2 <- merge(extract, activities, by = "activityid")
 #remove activityid
-extract2 = subset(extract2, select = -c("activityid"))
+extract2 = subset(extract2, select = -c(activityid))
 
 #4.update names to have descriptive variable names
 names(extract2) <- tolower(names(extract2))
@@ -54,4 +54,4 @@ names(extract2) <- gsub("-", "", names(extract2))
 meanData <- aggregate(extract2, by = list(activity = extract2$activity, subject = extract2$subjectid), mean)
 meanData <- aggregate(. ~activity + subjectid, extract2, mean)
 
-write.table(meanData, "meanData.txt", sep="\t")
+write.table(meanData, "meanData.txt", sep="\t", row.names = FALSE)
