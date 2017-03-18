@@ -42,4 +42,4 @@ To this data frame the activity names were joined and the activityid was removed
 
 After that the variable names were set to have descriptive well formatted names.
 
-From this data teh data frame meanData was created with the average of each variable for each activity and each subject.
+From this data the data frame meanData was created with the average of each variable for each activity and each subject.
